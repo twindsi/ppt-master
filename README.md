@@ -57,8 +57,10 @@ All configuration is done via the `.env` file. See [`.env.example`](.env.example
 | `OPENAI_API_KEY` | Your OpenAI (or compatible) API key | — |
 | `OPENAI_API_BASE` | Base URL for the API endpoint | `https://api.openai.com/v1` |
 | `MODEL_NAME` | LLM model to use for generation | `gpt-4o` |
-| `MAX_SLIDES` | Maximum number of slides to generate | `15` |
+| `MAX_SLIDES` | Maximum number of slides to generate | `10` |
 | `THEME` | Default presentation theme | `default` |
+
+> **Personal note:** I lowered `MAX_SLIDES` to `10` as the default — I found 15 slides tends to produce a lot of filler content for most use cases. Adjust up if you need longer decks.
 
 ## Project Structure
 

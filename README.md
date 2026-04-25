@@ -62,6 +62,8 @@ All configuration is done via the `.env` file. See [`.env.example`](.env.example
 
 > **Personal note:** I lowered `MAX_SLIDES` to `10` as the default — I found 15 slides tends to produce a lot of filler content for most use cases. Adjust up if you need longer decks.
 
+> **Local model tip:** If you're running a local model via [Ollama](https://ollama.com/) or LM Studio, set `OPENAI_API_BASE` to `http://localhost:11434/v1` (Ollama) or `http://localhost:1234/v1` (LM Studio) and use `OPENAI_API_KEY=ollama` as a placeholder. Works well with `llama3` or `mistral` for shorter decks.
+
 ## Project Structure
 
 ```
